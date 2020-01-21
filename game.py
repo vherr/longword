@@ -13,6 +13,7 @@ class Game:
             self.grid.append(random.choice(string.ascii_uppercase))
 
     def is_valid(self, word):
+        word = word.upper()
         if not word:
             return False
         copy_grid = self.grid.copy()
